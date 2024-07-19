@@ -213,4 +213,5 @@ a.toc-link {
   height: 16px;  /* 设置高度 */
   background-image: url("https://icp.gov.moe/images/ico64.png");
   background-size: cover;  /* 设置背景图片尺寸 */
+  padding-top: 2px;
 }
