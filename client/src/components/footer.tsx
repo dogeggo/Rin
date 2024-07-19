@@ -43,12 +43,14 @@ function Footer() {
                 <link rel="alternate" type="application/json" title={siteName} href="/sub/rss.json" />
             </Helmet>
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show">
+                <div className="w-fit-content inline-flex rounded-full border border-zinc-200 p-[2px] dark:border-zinc-700">
+                    <ThemeButton mode='light' current={modeState} label="Toggle light mode" icon="ri-sun-line" onClick={setMode} />
+                    <ThemeButton mode='system' current={modeState} label="Toggle system mode" icon="ri-computer-line" onClick={setMode} />
+                    <ThemeButton mode='dark' current={modeState} label="Toggle dark mode" icon="ri-moon-line" onClick={setMode} />
+                </div>
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
-                <p className='text-sm text-neutral-500 font-normal link-line justify-center'>
-                    <span className='justify-center'>
-                        本站总访问量 <span id="busuanzi_site_pv"></span> | 本站总访客数 <span id="busuanzi_site_uv"></span>
-                    </span><br/>
-                    <span className='justify-center'>
+                <p className='text-sm text-neutral-500 font-normal link-line text-center'>
+                    <span>
                         <a className='hover:underline' href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>
                     </span><br/>
                     <span>
@@ -84,11 +86,6 @@ function Footer() {
                         </Popup>
                     </>}
                 </p>
-                <div className="w-fit-content inline-flex rounded-full border border-zinc-200 p-[3px] dark:border-zinc-700">
-                    <ThemeButton mode='light' current={modeState} label="Toggle light mode" icon="ri-sun-line" onClick={setMode} />
-                    <ThemeButton mode='system' current={modeState} label="Toggle system mode" icon="ri-computer-line" onClick={setMode} />
-                    <ThemeButton mode='dark' current={modeState} label="Toggle dark mode" icon="ri-moon-line" onClick={setMode} />
-                </div>
             </div>
         </footer>
     );
