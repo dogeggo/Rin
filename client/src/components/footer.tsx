@@ -43,14 +43,14 @@ function Footer() {
                 <link rel="alternate" type="application/json" title={siteName} href="/sub/rss.json" />
             </Helmet>
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show">
-                <div className="w-fit-content inline-flex rounded-full border border-zinc-200 p-[2px] dark:border-zinc-700">
+                <div className="w-fit-content inline-flex rounded-full border border-zinc-200 p-[3px] dark:border-zinc-700">
                     <ThemeButton mode='light' current={modeState} label="Toggle light mode" icon="ri-sun-line" onClick={setMode} />
                     <ThemeButton mode='system' current={modeState} label="Toggle system mode" icon="ri-computer-line" onClick={setMode} />
                     <ThemeButton mode='dark' current={modeState} label="Toggle dark mode" icon="ri-moon-line" onClick={setMode} />
                 </div>
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
                 <p className='text-sm text-neutral-500 font-normal link-line text-center'>
-                    <img src="https://icp.gov.moe/images/ico64.png" style="width: 1em;"></img>
+                    <img className="w-lg h-lg" src="https://icp.gov.moe/images/ico64.png"></img>
                     <a className='hover:underline' href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>
                     <br/>
                     <span>
