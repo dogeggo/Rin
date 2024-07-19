@@ -44,11 +44,11 @@ function Footer() {
             </Helmet>
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show">
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
-                <p className='text-sm text-neutral-500 font-normal link-line'>
-                    <span>
+                <p className='text-sm text-neutral-500 font-normal link-line justify-center'>
+                    <span className='justify-center'>
                         本站总访问量 <span id="busuanzi_site_pv"></span> | 本站总访客数 <span id="busuanzi_site_uv"></span>
                     </span><br/>
-                    <span>
+                    <span className='justify-center'>
                         <a className='hover:underline' href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>
                     </span><br/>
                     <span>
