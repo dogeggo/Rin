@@ -50,8 +50,8 @@ function Footer() {
                 </div>
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
                 <p className='text-sm text-neutral-500 font-normal link-line text-center'>
-                    {<div dangerouslySetInnerHTML={{ __html: '<img className="w-[16px] h-[16px]" src="https://icp.gov.moe/images/ico64.png">' }} />}
-                    <a className='hover:underline' href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>
+                    {<div dangerouslySetInnerHTML={{ __html: '<img width="16" height="16" src="https://icp.gov.moe/images/ico64.png"> <a style="hover:underline" href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>' }} />}
+                    
                     <br/>
                     <span>
                         © 2024 Powered by <a className='hover:underline' href="https://github.com/openRin/Rin" target="_blank">Rin</a>
