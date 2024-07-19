@@ -37,7 +37,6 @@ function Footer() {
 
     return (
         <footer>
-            <script defer src="https://busuanzi.9420.ltd/js"></script>
             <Helmet>
                 <link rel="alternate" type="application/rss+xml" title={siteName} href="/sub/rss.xml" />
                 <link rel="alternate" type="application/atom+xml" title={siteName} href="/sub/atom.xml" />
