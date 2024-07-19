@@ -206,3 +206,11 @@ a.toc-link {
 .is-active-link::before {
   @apply bg-theme;
 }
+
+.mb-icon {
+  display: inline-block;  /* 设置span标签为块级元素 */
+  width: 16px;  /* 设置宽度 */
+  height: 16px;  /* 设置高度 */
+  background-image: url("https://icp.gov.moe/images/ico64.png");
+  background-size: cover;  /* 设置背景图片尺寸 */
+}

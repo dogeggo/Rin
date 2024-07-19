@@ -42,8 +42,6 @@ function Footer() {
                 <link rel="alternate" type="application/atom+xml" title={siteName} href="/sub/atom.xml" />
                 <link rel="alternate" type="application/json" title={siteName} href="/sub/rss.json" />
             </Helmet>
-            {<div dangerouslySetInnerHTML={{ __html: '<img width="16" height="16" src="https://icp.gov.moe/images/ico64.png"> <a style="hover:underline" href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>' }} />}
-            <img className='h-[16px] w-[16px]' src="https://icp.gov.moe/images/ico64.png"/> <a className="hover:underline" href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>
             <div className="flex flex-col mb-8 space-y-2 justify-center items-center t-primary ani-show text-center">
                 <div className="w-fit-content space-x-4 inline-flex rounded-full border border-zinc-200 p-[5px] dark:border-zinc-700">
                     <ThemeButton mode='light' current={modeState} label="Toggle light mode" icon="ri-sun-line" onClick={setMode} />
@@ -52,6 +50,8 @@ function Footer() {
                 </div>
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
                 <p className='text-sm text-neutral-500 font-normal link-line text-center'>
+                    <span className='mb-icon' />
+                    <a className="hover:underline" href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a>
                     <span>
                         © 2024 Powered by <a className='hover:underline' href="https://github.com/openRin/Rin" target="_blank">Rin</a>
                     </span>
