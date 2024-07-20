@@ -237,7 +237,7 @@ function SearchButton({ className, onClose }: { className?: string, onClose?: ()
             }}
             onRequestClose={() => setIsOpened(false)}
         >
-            <div className="bg-w w-full flex flex-row items-center justify-between p-4 space-x-4">
+            <div className="wauto bg-w w-full flex-col flex items-center justify-between p-4 space-x-4">
                 <Input value={value} setValue={setValue} placeholder={t('article.search.placeholder')}
                     autofocus
                     onSubmit={onSearch} />

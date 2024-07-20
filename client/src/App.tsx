@@ -75,6 +75,10 @@ function App() {
               <FeedsPage />
             </RouteMe>
 
+            {/* <Route path= "/sitemap" >
+                <SiteMap />
+            </Route> */}
+
             <RouteMe path="/timeline">
               <TimelinePage />
             </RouteMe>
@@ -198,5 +202,16 @@ function RouteWithIndex({ path, children }:
     }}
   </RouteMe>)
 }
+
+// export function SiteMap() {
+//   const [fileContent, setFileContent] = useState<string>("");
+//   const file = e.target.files[0];
+//   const reader = new FileReader();
+//   reader.onload = function (e) {
+//     setFileContent(e.target.result as string);
+//   };
+//   reader.readAsText(file);
+//   return {fileContent};
+// }
 
 export default App
