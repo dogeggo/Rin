@@ -49,7 +49,7 @@ function Footer() {
                     <ThemeButton mode='dark' current={modeState} label="Toggle dark mode" icon="ri-moon-line" onClick={setMode} />
                 </div>
                 {footerHtml && <div dangerouslySetInnerHTML={{ __html: footerHtml }} />}
-                <p className='text-sm text-neutral-500 font-normal link-line text-center'>
+                <p className='text-sm text-neutral-500 font-light link-line text-center'>
                     <span className="mb-icon"></span>
                     <a className="hover:underline" href="https://icp.gov.moe/?keyword=20245001" target="_blank">萌ICP备20245001号</a><br/>
                     <span>
