@@ -10,7 +10,7 @@ import { client } from './main'
 import { CallbackPage } from './page/callback'
 import { FeedPage, TOCHeader } from './page/feed'
 import { FeedsPage } from './page/feeds'
-import { FriendsPage } from './page/friends'
+// import { FriendsPage } from './page/friends'
 import { HashtagPage } from './page/hashtag.tsx'
 import { HashtagsPage } from './page/hashtags.tsx'
 import { Settings } from "./page/settings.tsx"
