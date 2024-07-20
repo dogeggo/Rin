@@ -80,9 +80,9 @@ function App() {
             </RouteMe>
 
 
-            <RouteMe path="/friends">
+            {/* <RouteMe path="/friends">
               <FriendsPage />
-            </RouteMe>
+            </RouteMe> */}
 
             <RouteMe path="/hashtags">
               <HashtagsPage />
