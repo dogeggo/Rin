@@ -443,7 +443,7 @@ export function WritingPage({ id }: { id?: number }) {
                       options={{
                         wordWrap: "on",
                         fontSize: 14,
-                        fontFamily: "Fira Code",
+                        fontFamily: "Microsoft Yahei",
                         lineNumbers: "off",
                         dragAndDrop: true,
                         pasteAs: { enabled: false }
