@@ -23,6 +23,7 @@ import { tryInt } from './utils/int'
 import { SearchPage } from './page/search.tsx'
 import { Tips, TipsPage } from './components/tips.tsx'
 import { useTranslation } from 'react-i18next'
+import * as fs from 'fs';
 
 function App() {
   const ref = useRef(false)
@@ -75,9 +76,9 @@ function App() {
               <FeedsPage />
             </RouteMe>
 
-            {/* <Route path= "/sitemap" >
+            <Route path= "/sitemap" >
                 <SiteMap />
-            </Route> */}
+            </Route>
 
             <RouteMe path="/timeline">
               <TimelinePage />
@@ -203,15 +204,14 @@ function RouteWithIndex({ path, children }:
   </RouteMe>)
 }
 
-// export function SiteMap() {
-//   const [fileContent, setFileContent] = useState<string>("");
-//   const file = e.target.files[0];
-//   const reader = new FileReader();
-//   reader.onload = function (e) {
-//     setFileContent(e.target.result as string);
-//   };
-//   reader.readAsText(file);
-//   return {fileContent};
-// }
+export function SiteMap() {
+  // const [fileContent, setFileContent] = useState<string>("");
+  // const reader = new FileReader();
+  // reader.onload = function (e) {
+  //   setFileContent(e.target.result as string);
+  // };
+  // reader.readAsText(file);
+  return fs.readFileSync("/sitemap.xml", "utf8");
+}
 
 export default App
