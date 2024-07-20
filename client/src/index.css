@@ -4,7 +4,7 @@
 @tailwind utilities;
 /* cantarell-latin-400-normal */
 @font-face {
-  font-family: "Cantarell";
+  font-family: "Noto Sans SC","Cantarell", sans-serif;
   font-style: normal;
   font-display: auto;
   font-weight: 400;
