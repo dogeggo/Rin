@@ -4,7 +4,6 @@ import { ClientConfigContext } from '../state/config';
 import { Helmet } from "react-helmet";
 import { siteName } from '../utils/constants';
 import { useTranslation } from "react-i18next";
-import { useLoginModal } from '../hooks/useLoginModal';
 
 type ThemeMode = 'light' | 'dark' | 'system';
 function Footer() {
@@ -12,9 +11,6 @@ function Footer() {
     const [modeState, setModeState] = useState<ThemeMode>('system');
     const config = useContext(ClientConfigContext);
     const footerHtml = config.get<string>('footer');
-    const loginEnabled = config.get<boolean>('login.enabled');
-    const [doubleClickTimes, setDoubleClickTimes] = useState(0);
-    const { LoginModal, setIsOpened } = useLoginModal()
     useEffect(() => {
         const mode = localStorage.getItem('theme') as ThemeMode || 'system';
         setModeState(mode);
@@ -90,7 +86,6 @@ function Footer() {
                     </>}
                 </p>
             </div>
-            <LoginModal />
         </footer>
     );
 }
